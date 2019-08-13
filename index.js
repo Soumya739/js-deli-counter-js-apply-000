@@ -5,6 +5,18 @@ function takeANumber(currentLine, newPerson){
    		 return welcomeMessage;
 }
 
+var customerNo = 0;
+function takeANumber2(){
+  customerNo++
+  var text = "Welcome! You are customer number: " + customerNo;
+  console.log(text);
+}
+
+takeANumber2();
+takeANumber2();
+takeANumber2();
+
+
 function nowServing(katzDeliLine){
   		if (katzDeliLine.length === 0){
         		return "There is nobody waiting to be served!";
